@@ -1,217 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julien Acone – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f0f1b;
-    }
-    h1, h2 {
-      font-family: 'Rajdhani', sans-serif;
-    }
-    .neon-glow {
-      transition: all 0.3s ease-in-out;
-    }
-    .neon-glow:hover {
-      transform: translateY(-6px);
-    }
-  </style>
-</head>
-<body class="text-gray-200">
-  <main class="max-w-6xl mx-auto px-6 py-12">
-    
-    <!-- Time Display at Top Center -->
-<div id="time-zone" class="text-center text-sm mb-6 font-mono opacity-80 text-cyan-400 bg-gray-900 bg-opacity-70 px-4 py-1 pointer-events-none select-none w-fit mx-auto min-w-[180px]">
-  Loading time...
-</div>
-
-    <header class="text-center mb-12">
-      <h1 class="text-5xl font-bold text-cyan-400 drop-shadow-md">PROJECTS</h1>
-      <p class="text-md text-gray-400 mt-2 tracking-wide uppercase">Crafted by Julien Acone</p>
-    </header>
-
-    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-  <!-- Card 1 -->
-  <a
-    href="https://pugtatoes-app.vercel.app/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
-  >
-    <img
-      src="proj_1.png"
-      alt="Pugtatoes Screenshot"
-      class="h-60 w-full object-cover bg-gray-700 opacity-90"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julien Acone – Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rajdhani:wght@600&display=swap"
+      rel="stylesheet"
     />
-    <div class="p-4 flex-1 flex flex-col">
-      <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
-        Pugtatoes – Digital Storefront
-      </h2>
-      <p class="text-sm text-gray-400 mt-1">
-        Built with Next.js, styled using HTML/CSS, and powered by Stripe and Strapi for seamless payments and dynamic content management.
-      </p>
-      <p class="text-xs text-gray-500 mt-2 italic">
-        Note: Hosted on a free tier — please allow a few seconds for the project to load.
-      </p>
-      <div class="mt-auto"></div>
-    </div>
-    <div class="flex gap-2 p-4">
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Next.js</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">CSS</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Strapi</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Stripe</span>
-    </div>
-  </a>
-
-  <!-- Card 2 -->
-  <a
-    href="https://www.youtube.com/watch?v=J50FYPmIFsQ"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
-  >
-    <img
-      src="proj_20.png"
-      alt="Interactive Experience Screenshot"
-      class="h-60 w-full object-cover bg-gray-700 opacity-90"
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
     />
-    <div class="p-4 flex-1 flex flex-col">
-      <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
-        Experimental Interactive Experience
-      </h2>
-      <p class="text-sm text-gray-400 mt-1">
-        An experimental interactive experience built with Godot and GDScript, featuring retro ASCII-inspired shaders, eerie atmospheric design, and stylized 3D assets crafted in Blender.
-      </p>
-      <div class="mt-auto"></div>
-    </div>
-    <div class="flex gap-2 p-4">
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Godot</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">GDScript</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Blender</span>
-    </div>
-  </a>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #0f0f1b;
+      }
 
-  <!-- Card 3 -->
-  <a
-    href="https://artstation.com/jaconeart"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
-  >
-    <img
-      src="proj_4.png"
-      alt="Animations Showcase Screenshot"
-      class="h-60 w-full object-cover bg-gray-700 opacity-90"
-    />
-    <div class="p-4 flex-1 flex flex-col">
-      <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
-        Animations Showcase
-      </h2>
-      <p class="text-sm text-gray-400 mt-1">
-        A diverse 3D animation portfolio blending stop-motion-inspired pieces, hard-surface modeling, and hybrid styles crafted in Blender.
-      </p>
-    </div>
-      <div class="flex gap-2 p-4">
-        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Adobe Suite</span>
-        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Blender</span>
-        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Substance</span>
-    </div>
-  </a>
+      h1,
+      h2 {
+        font-family: 'Rajdhani', sans-serif;
+      }
 
-  <!-- Card 4 -->
-  <a
-    href="https://github.com/julienacone/ddos_sniffer"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
-  >
-    <img
-      src="proj_5.png"
-      alt="DDOS Sniffer Screenshot"
-      class="h-60 w-full object-cover bg-gray-700 opacity-90"
-    />
-    <div class="p-4 flex-1 flex flex-col">
-      <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
-        DDOS Sniffer
-      </h2>
-      <p class="text-sm text-gray-400 mt-1">
-        A lightweight Bash script using tshark to detect potential SYN flood attacks on Raspberry Pi OS Lite.
-      </p>
-    </div>
-    <div class="flex flex-wrap gap-2 p-4">
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Bash</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">tshark</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Linux</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Raspberry Pi</span>
-    </div>
-  </a>
+      .neon-glow {
+        transition: all 0.3s ease-in-out;
+      }
 
-  <!-- Card 5 -->
-  <a
-    href="https://www.youtube.com/watch?v=0uTIaKxqDhA"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
-  >
-    <img
-      src="proj_3.gif"
-      alt="Python LLM in Godot Screenshot"
-      class="h-60 w-full object-cover bg-gray-700 opacity-90"
-    />
-    <div class="p-4 flex-1 flex flex-col">
-      <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
-        Python LLM in Godot 4 – Chat with an NPC
-      </h2>
-      <p class="text-sm text-gray-400 mt-1">
-        Connects Godot to a Python-based LLM that roleplays as a wizard. Player input is written to a file, processed by the model, and the wizard’s quirky response is returned.
-      </p>
-      
-    </div>
-    <div class="flex flex-wrap gap-2 p-4">
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Godot</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">GDScript</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Python</span>
-      <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">DeepseekAI</span>
-    </div>
-  </a>
-</section>
+      .neon-glow:hover {
+        transform: translateY(-6px);
+      }
+    </style>
+  </head>
 
- <!-- About Me Section --> <section class="mt-20"> <div class="flex flex-col md:flex-row items-center md:items-start gap-10"> <!-- Text Content --> <div class="md:w-1/2 text-left"> <h2 class="text-3xl font-bold text-cyan-400 mb-4">About Me</h2> <p class="text-gray-400 text-md leading-relaxed"> I'm Julien Acone, an <strong class="text-gray-300">Interactive Developer & 3D Artist</strong> based in Paris, France. I blend storytelling with tech—building immersive experiences powered by real-time rendering, AI, and expressive design. </p> <p class="text-gray-400 text-md mt-4"> With roots in animation and full-stack development, I’ve contributed to NFT collections, digital storefronts, and <strong class="text-gray-300">AI-driven games</strong> using tools like <strong class="text-gray-300">Godot</strong>, <strong class="text-gray-300">Blender</strong>, <strong class="text-gray-300">Next.js</strong>, and <strong class="text-gray-300">Python</strong> for integrating large language models. </p> <p class="text-gray-400 text-md mt-4"> <a href="https://julienacone.github.io/resume/" class="inline-flex items-center gap-1 text-md text-cyan-300 hover:underline font-semibold group"> <span class="text-gray-200 font-light">View my <strong class="text-gray-200 font-light">resume</strong></span> <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 transform transition-transform duration-200 group-hover:scale-125" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"> <path d="M5 12h14M12 5l7 7-7 7"/> </svg> </a> </div> <!-- Image --> <div class="md:w-1/2 flex justify-center"> <img src="me.jpg" alt="Julien Acone" class="rounded-xl shadow-lg object-cover w-4/4 max-w-[280px]"> </div> </div> </section>
+  <body class="text-gray-200">
+    <main class="max-w-6xl mx-auto px-6 py-12">
+      <!-- Time Display at Top Center -->
+      <div
+        id="time-zone"
+        class="text-center text-sm mb-6 font-mono opacity-80 text-cyan-400 bg-gray-900 bg-opacity-70 px-4 py-1 pointer-events-none select-none w-fit mx-auto min-w-[180px]"
+      >
+        Loading time...
+      </div>
 
-<!-- Footer -->
-<footer class="mt-20 pt-10 border-t border-gray-700 text-center text-sm text-gray-500 space-y-2">
-  <p>v1</p>
-  <p>© 2025 Julien Acone. All rights reserved.</p>
-  <div class="flex justify-center gap-x-6 flex-wrap">
-    <a href="mailto:aconejulien@gmail.com" class="text-cyan-300 hover:underline">aconejulien@gmail.com</a>
-    <a href="https://github.com/julienacone" class="text-cyan-300 hover:underline">GitHub</a>
-    <a href="https://artstation.com/jaconeart" class="text-cyan-300 hover:underline">ArtStation</a>
-  </div>
-</footer>
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <h1 class="text-5xl font-bold text-cyan-400 drop-shadow-md">PROJECTS</h1>
+        <p class="text-md text-gray-400 mt-2 tracking-wide uppercase">
+          Crafted by Julien Acone
+        </p>
+      </header>
 
+      <!-- Projects Section -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Card 1 -->
+        <a
+          href="https://pugtatoes-app.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
+        >
+          <img
+            src="proj_1.png"
+            alt="Pugtatoes Screenshot"
+            class="h-60 w-full object-cover bg-gray-700 opacity-90"
+          />
+          <div class="p-4 flex-1 flex flex-col">
+            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+              Pugtatoes – Digital Storefront
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">
+              Built with Next.js, styled using HTML/CSS, and powered by Stripe and Strapi for seamless payments and dynamic content management.
+            </p>
+            <p class="text-xs text-gray-500 mt-2 italic">
+              Note: Hosted on a free tier — please allow a few seconds for the project to load.
+            </p>
+            <div class="mt-auto"></div>
+          </div>
+          <div class="flex gap-2 p-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Next.js</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">CSS</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Strapi</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Stripe</span>
+          </div>
+        </a>
 
-  </main>
+        <!-- Card 2 -->
+        <a
+          href="https://www.youtube.com/watch?v=J50FYPmIFsQ"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
+        >
+          <img
+            src="proj_20.png"
+            alt="Interactive Experience Screenshot"
+            class="h-60 w-full object-cover bg-gray-700 opacity-90"
+          />
+          <div class="p-4 flex-1 flex flex-col">
+            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+              Experimental Interactive Experience
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">
+              An experimental interactive experience built with Godot and GDScript, featuring retro ASCII-inspired shaders, eerie atmospheric design, and stylized 3D assets crafted in Blender.
+            </p>
+            <div class="mt-auto"></div>
+          </div>
+          <div class="flex gap-2 p-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Godot</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">GDScript</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Blender</span>
+          </div>
+        </a>
 
-  <script>
-    function updateTime() {
-      const options = {
-        timeZone: 'Europe/Paris',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit'
-      };
-      const timeString = new Intl.DateTimeFormat('en-GB', options).format(new Date());
-      const display = `TIMEZONE – CEST ${timeString}`;
-      document.getElementById('time-zone').textContent = display;
-    }
+        <!-- Card 3 -->
+        <a
+          href="https://artstation.com/jaconeart"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
+        >
+          <img
+            src="proj_4.png"
+            alt="Animations Showcase Screenshot"
+            class="h-60 w-full object-cover bg-gray-700 opacity-90"
+          />
+          <div class="p-4 flex-1 flex flex-col">
+            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+              Animations Showcase
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">
+              A diverse 3D animation portfolio blending stop-motion-inspired pieces, hard-surface modeling, and hybrid styles crafted in Blender.
+            </p>
+          </div>
+          <div class="flex gap-2 p-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Adobe Suite</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Blender</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Substance</span>
+          </div>
+        </a>
 
-    updateTime();
-    setInterval(updateTime, 1000);
-  </script>
-</body>
+        <!-- Card 4 -->
+        <a
+          href="https://github.com/julienacone/ddos_sniffer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
+        >
+          <img
+            src="proj_5.png"
+            alt="DDOS Sniffer Screenshot"
+            class="h-60 w-full object-cover bg-gray-700 opacity-90"
+          />
+          <div class="p-4 flex-1 flex flex-col">
+            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+              DDOS Sniffer
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">
+              A lightweight Bash script using tshark to detect potential SYN flood attacks on Raspberry Pi OS Lite.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 p-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Bash</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">tshark</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Linux</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Raspberry Pi</span>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a
+          href="https://www.youtube.com/watch?v=0uTIaKxqDhA"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
+        >
+          <img
+            src="proj_3.gif"
+            alt="Python LLM in Godot Screenshot"
+            class="h-60 w-full object-cover bg-gray-700 opacity-90"
+          />
+          <div class="p-4 flex-1 flex flex-col">
+            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+              Python LLM in Godot 4 – Chat with an NPC
+            </h2>
+            <p class="text-sm text-gray-400 mt-1">
+              Connects Godot to a Python-based LLM that roleplays as a wizard. Player input is written to a file, processed by the model, and the wizard’s quirky response is returned.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 p-4">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Godot</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">GDScript</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Python</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">DeepseekAI</span>
+          </div>
+        </a>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="mt-20">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+          <!-- Text Content -->
+          <div class="md:w-1/2 text-left">
+            <h2 class="text-3xl font-bold text-cyan-400 mb-4">About Me</h2>
+            <p class="text-gray-400 text-md leading-relaxed">
+              I'm Julien Acone, an
+              <strong class="text-gray-300">Interactive Developer & 3D Artist</strong>
+              based in Paris, France. I blend storytelling with tech—building immersive experiences powered by real-time rendering, AI, and expressive design.
+            </p>
+            <p class="text-gray-400 text-md mt-4">
+              With roots in animation and full-stack development, I’ve contributed to NFT collections, digital storefronts, and
+              <strong class="text-gray-300">AI-driven games</strong>
+              using tools like
+              <strong class="text-gray-300">Godot</strong>,
+              <strong class="text-gray-300">Blender</strong>,
+              <strong class="text-gray-300">Next.js</strong>, and
+              <strong class="text-gray-300">Python</strong>
+              for integrating large language models.
+            </p>
+            <p class="text-gray-400 text-md mt-4">
+              <a
+                href="https://julienacone.github.io/resume/"
+                class="inline-flex items-center gap-1 text-md text-cyan-300 hover:underline font-semibold group"
+              >
+                <span class="text-gray-200 font-light">
+                  View my <strong class="text-gray-200 font-light">resume</strong>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4 transform transition-transform duration-200 group-hover:scale-125"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="md:w-1/2 flex justify-center">
+            <img
+              src="me.jpg"
+              alt="Julien Acone"
+              class="rounded-xl shadow-lg object-cover w-4/4 max-w-[280px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="mt-20 pt-10 border-t border-gray-700 text-center text-sm text-gray-500 space-y-2">
+        <p>v1</p>
+        <p>© 2025 Julien Acone. All rights reserved.</p>
+        <div class="flex justify-center gap-x-6 flex-wrap">
+          <a href="mailto:aconejulien@gmail.com" class="text-cyan-300 hover:underline">aconejulien@gmail.com</a>
+          <a href="https://github.com/julienacone" class="text-cyan-300 hover:underline">GitHub</a>
+          <a href="https://artstation.com/jaconeart" class="text-cyan-300 hover:underline">ArtStation</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      function updateTime() {
+        const options = {
+          timeZone: 'Europe/Paris',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+        };
+        const timeString = new Intl.DateTimeFormat('en-GB', options).format(new Date());
+        const display = `TIMEZONE – CEST ${timeString}`;
+        document.getElementById('time-zone').textContent = display;
+      }
+
+      updateTime();
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
 </html>
