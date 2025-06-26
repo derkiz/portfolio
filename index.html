@@ -14,13 +14,13 @@
     />
     <style>
       body {
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         background: #0f0f1b;
       }
 
       h1,
       h2 {
-        font-family: 'Rajdhani', sans-serif;
+        font-family: "Rajdhani", sans-serif;
       }
 
       .neon-glow {
@@ -45,7 +45,9 @@
 
       <!-- Header -->
       <header class="text-center mb-12">
-        <h1 class="text-5xl font-bold text-cyan-400 drop-shadow-md">PROJECTS</h1>
+        <h1 class="text-5xl font-bold text-cyan-400 drop-shadow-md">
+          PROJECTS
+        </h1>
         <p class="text-md text-gray-400 mt-2 tracking-wide uppercase">
           Crafted by Julien Acone
         </p>
@@ -54,162 +56,429 @@
       <!-- Projects Section -->
       <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         <!-- Card 1 -->
-        <a
-          href="https://pugtatoes-app.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
         >
-          <img
-            src="proj_1.png"
-            alt="Pugtatoes Screenshot"
-            class="h-60 w-full object-cover bg-gray-700 opacity-90"
-          />
+          <!-- Image with overlayed icons -->
+          <div class="relative">
+            <img
+              src="proj_1.png"
+              alt="Pugtatoes Screenshot"
+              class="h-60 w-full object-cover bg-gray-700 opacity-90"
+            />
+            <div class="absolute top-2 right-2 flex gap-2">
+              <!-- GitHub Icon -->
+              <a
+                href="https://github.com/julienacone/pugtatoes-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View on GitHub"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
+            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.612-4.042-1.612-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729
+            1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.997.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.332-5.467-5.93
+            0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399
+            3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12
+            3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48
+            5.92.43.37.823 1.102.823 2.222 0 1.604-.015 2.896-.015
+            3.286 0 .32.216.694.825.576C20.565 21.796 24 17.3 24
+            12c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+
+              <!-- External Link Icon -->
+              <a
+                href="https://pugtatoes-app.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Visit Live Site"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5v14h14v-7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Content below image -->
           <div class="p-4 flex-1 flex flex-col">
-            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+            <h2
+              class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors"
+            >
               Pugtatoes – Digital Storefront
             </h2>
             <p class="text-sm text-gray-400 mt-1">
-              Built with Next.js, styled using HTML/CSS, and powered by Stripe and Strapi for seamless payments and dynamic content management.
+              Built with Next.js, styled using HTML/CSS, and powered by Stripe
+              and Strapi for seamless payments and dynamic content management.
             </p>
             <p class="text-xs text-gray-500 mt-2 italic">
-              Note: Hosted on a free tier — please allow a few seconds for the project to load.
+              Note: Hosted on a free tier — please allow a few seconds for the
+              project to load.
             </p>
             <div class="mt-auto"></div>
           </div>
           <div class="flex gap-2 p-4">
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Next.js</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">CSS</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Strapi</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Stripe</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Next.js</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >CSS</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Strapi</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Stripe</span
+            >
           </div>
-        </a>
+        </div>
 
         <!-- Card 2 -->
-        <a
-          href="https://www.youtube.com/watch?v=J50FYPmIFsQ"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
         >
-          <img
-            src="proj_20.png"
-            alt="Interactive Experience Screenshot"
-            class="h-60 w-full object-cover bg-gray-700 opacity-90"
-          />
+          <!-- Image with overlayed icon -->
+          <div class="relative">
+            <img
+              src="proj_20.png"
+              alt="Interactive Experience Screenshot"
+              class="h-60 w-full object-cover bg-gray-700 opacity-90"
+            />
+            <div class="absolute top-2 right-2 flex gap-2">
+              <!-- External Link Icon -->
+              <a
+                href="https://www.youtube.com/watch?v=J50FYPmIFsQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Watch on YouTube"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5v14h14v-7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
           <div class="p-4 flex-1 flex flex-col">
-            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+            <h2
+              class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors"
+            >
               Experimental Interactive Experience
             </h2>
             <p class="text-sm text-gray-400 mt-1">
-              An experimental interactive experience built with Godot and GDScript, featuring retro ASCII-inspired shaders, eerie atmospheric design, and stylized 3D assets crafted in Blender.
+              An experimental interactive experience built with Godot and
+              GDScript, featuring retro ASCII-inspired shaders, eerie
+              atmospheric design, and stylized 3D assets crafted in Blender.
             </p>
             <div class="mt-auto"></div>
           </div>
           <div class="flex gap-2 p-4">
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Godot</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">GDScript</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Blender</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Godot</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >GDScript</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Blender</span
+            >
           </div>
-        </a>
+        </div>
 
         <!-- Card 3 -->
-        <a
-          href="https://artstation.com/jaconeart"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
         >
-          <img
-            src="proj_4.png"
-            alt="Animations Showcase Screenshot"
-            class="h-60 w-full object-cover bg-gray-700 opacity-90"
-          />
+          <!-- Image with overlayed icon -->
+          <div class="relative">
+            <img
+              src="proj_4.png"
+              alt="Animations Showcase Screenshot"
+              class="h-60 w-full object-cover bg-gray-700 opacity-90"
+            />
+            <div class="absolute top-2 right-2 flex gap-2">
+              <!-- External Link Icon -->
+              <a
+                href="https://artstation.com/jaconeart"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View on ArtStation"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5v14h14v-7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
           <div class="p-4 flex-1 flex flex-col">
-            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+            <h2
+              class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors"
+            >
               Animations Showcase
             </h2>
             <p class="text-sm text-gray-400 mt-1">
-              A diverse 3D animation portfolio blending stop-motion-inspired pieces, hard-surface modeling, and hybrid styles crafted in Blender.
+              A diverse 3D animation portfolio blending stop-motion-inspired
+              pieces, hard-surface modeling, and hybrid styles crafted in
+              Blender.
             </p>
           </div>
           <div class="flex gap-2 p-4">
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Adobe Suite</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Blender</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Substance</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Adobe Suite</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Blender</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Substance</span
+            >
           </div>
-        </a>
+        </div>
 
         <!-- Card 4 -->
-        <a
-          href="https://github.com/julienacone/ddos_sniffer"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
         >
-          <img
-            src="proj_5.png"
-            alt="DDOS Sniffer Screenshot"
-            class="h-60 w-full object-cover bg-gray-700 opacity-90"
-          />
+          <!-- Image with overlayed icon -->
+          <div class="relative">
+            <img
+              src="proj_5.png"
+              alt="DDOS Sniffer Screenshot"
+              class="h-60 w-full object-cover bg-gray-700 opacity-90"
+            />
+            <div class="absolute top-2 right-2 flex gap-2">
+              <!-- GitHub Icon -->
+              <a
+                href="https://github.com/julienacone/ddos_sniffer"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View on GitHub"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577
+            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.612-4.042-1.612-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729
+            1.205.085 1.84 1.237 1.84 1.237 1.07 1.835 2.807 1.305 3.492.997.108-.776.418-1.305.762-1.605-2.665-.305-5.467-1.332-5.467-5.93
+            0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.984-.399
+            3.003-.404 1.02.005 2.047.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12
+            3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48
+            5.92.43.37.823 1.102.823 2.222 0 1.604-.015 2.896-.015
+            3.286 0 .32.216.694.825.576C20.565 21.796 24 17.3 24
+            12c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
           <div class="p-4 flex-1 flex flex-col">
-            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+            <h2
+              class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors"
+            >
               DDOS Sniffer
             </h2>
             <p class="text-sm text-gray-400 mt-1">
-              A lightweight Bash script using tshark to detect potential SYN flood attacks on Raspberry Pi OS Lite.
+              A lightweight Bash script using tshark to detect potential SYN
+              flood attacks on Raspberry Pi OS Lite.
             </p>
           </div>
           <div class="flex flex-wrap gap-2 p-4">
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Bash</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">tshark</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Linux</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Raspberry Pi</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Bash</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >tshark</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Linux</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Raspberry Pi</span
+            >
           </div>
-        </a>
+        </div>
 
         <!-- Card 5 -->
-        <a
-          href="https://www.youtube.com/watch?v=0uTIaKxqDhA"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div
           class="flex flex-col h-full bg-gray-800 rounded-xl neon-glow overflow-hidden hover:ring-2 hover:ring-cyan-400 transition"
         >
-          <img
-            src="proj_3.gif"
-            alt="Python LLM in Godot Screenshot"
-            class="h-60 w-full object-cover bg-gray-700 opacity-90"
-          />
+          <!-- Image with overlayed icons -->
+          <div class="relative">
+            <img
+              src="proj_3.gif"
+              alt="Python LLM in Godot Screenshot"
+              class="h-60 w-full object-cover bg-gray-700 opacity-90"
+            />
+            <div class="absolute top-2 right-2 flex gap-2">
+              <!-- GitHub Icon -->
+              <a
+                href="https://github.com/julienacone/godot_chat_to_an_npc"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="View on GitHub"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 
+            8.205 11.387.6.113.82-.258.82-.577 
+            0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.612-4.042-1.612 
+            -.546-1.387-1.333-1.757-1.333-1.757 
+            -1.09-.745.083-.729.083-.729 
+            1.205.085 1.84 1.237 1.84 1.237 
+            1.07 1.835 2.807 1.305 3.492.997 
+            .108-.776.418-1.305.762-1.605 
+            -2.665-.305-5.467-1.332-5.467-5.93 
+            0-1.31.47-2.38 1.236-3.22 
+            -.124-.303-.536-1.523.117-3.176 
+            0 0 1.008-.322 3.3 1.23 
+            .957-.266 1.984-.399 3.003-.404 
+            1.02.005 2.047.138 3.006.404 
+            2.29-1.552 3.296-1.23 3.296-1.23 
+            .655 1.653.243 2.873.12 3.176 
+            .77.84 1.235 1.91 1.235 3.22 
+            0 4.61-2.807 5.624-5.48 5.92 
+            .43.37.823 1.102.823 2.222 
+            0 1.604-.015 2.896-.015 3.286 
+            0 .32.216.694.825.576 
+            C20.565 21.796 24 17.3 24 12 
+            c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+
+              <!-- External Link Icon -->
+              <a
+                href="https://www.youtube.com/watch?v=0uTIaKxqDhA"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Watch on YouTube"
+                class="text-white hover:text-cyan-400 bg-gray-900 p-2 rounded-full"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 3h7m0 0v7m0-7L10 14M5 5v14h14v-7"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
           <div class="p-4 flex-1 flex flex-col">
-            <h2 class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors">
+            <h2
+              class="text-lg font-bold text-cyan-300 hover:text-cyan-200 transition-colors"
+            >
               Python LLM in Godot 4 – Chat with an NPC
             </h2>
             <p class="text-sm text-gray-400 mt-1">
-              Connects Godot to a Python-based LLM that roleplays as a wizard. Player input is written to a file, processed by the model, and the wizard’s quirky response is returned.
+              Connects Godot to a Python-based LLM that roleplays as a wizard.
+              Player input is written to a file, processed by the model, and the
+              wizard’s quirky response is returned.
             </p>
           </div>
           <div class="flex flex-wrap gap-2 p-4">
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Godot</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">GDScript</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">Python</span>
-            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs">DeepseekAI</span>
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Godot</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >GDScript</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >Python</span
+            >
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs"
+              >DeepseekAI</span
+            >
           </div>
-        </a>
+        </div>
       </section>
 
       <!-- About Me Section -->
       <section class="mt-20">
-        <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-10"
+        >
           <!-- Text Content -->
           <div class="md:w-1/2 text-left">
             <h2 class="text-3xl font-bold text-cyan-400 mb-4">About Me</h2>
             <p class="text-gray-400 text-md leading-relaxed">
               I'm Julien Acone, an
-              <strong class="text-gray-300">Interactive Developer & 3D Artist</strong>
-              based in Paris, France. I blend storytelling with tech—building immersive experiences powered by real-time rendering, AI, and expressive design.
+              <strong class="text-gray-300"
+                >Interactive Developer & 3D Artist</strong
+              >
+              based in Paris, France. I blend storytelling with tech—building
+              immersive experiences powered by real-time rendering, AI, and
+              expressive design.
             </p>
             <p class="text-gray-400 text-md mt-4">
-              With roots in animation and full-stack development, I’ve contributed to NFT collections, digital storefronts, and
+              With roots in animation and full-stack development, I’ve
+              contributed to NFT collections, digital storefronts, and
               <strong class="text-gray-300">AI-driven games</strong>
               using tools like
               <strong class="text-gray-300">Godot</strong>,
@@ -224,7 +493,8 @@
                 class="inline-flex items-center gap-1 text-md text-cyan-300 hover:underline font-semibold group"
               >
                 <span class="text-gray-200 font-light">
-                  View my <strong class="text-gray-200 font-light">resume</strong>
+                  View my
+                  <strong class="text-gray-200 font-light">resume</strong>
                 </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -252,13 +522,27 @@
       </section>
 
       <!-- Footer -->
-      <footer class="mt-20 pt-10 border-t border-gray-700 text-center text-sm text-gray-500 space-y-2">
+      <footer
+        class="mt-20 pt-10 border-t border-gray-700 text-center text-sm text-gray-500 space-y-2"
+      >
         <p>v1</p>
         <p>© 2025 Julien Acone. All rights reserved.</p>
         <div class="flex justify-center gap-x-6 flex-wrap">
-          <a href="mailto:aconejulien@gmail.com" class="text-cyan-300 hover:underline">aconejulien@gmail.com</a>
-          <a href="https://github.com/julienacone" class="text-cyan-300 hover:underline">GitHub</a>
-          <a href="https://artstation.com/jaconeart" class="text-cyan-300 hover:underline">ArtStation</a>
+          <a
+            href="mailto:aconejulien@gmail.com"
+            class="text-cyan-300 hover:underline"
+            >aconejulien@gmail.com</a
+          >
+          <a
+            href="https://github.com/julienacone"
+            class="text-cyan-300 hover:underline"
+            >GitHub</a
+          >
+          <a
+            href="https://artstation.com/jaconeart"
+            class="text-cyan-300 hover:underline"
+            >ArtStation</a
+          >
         </div>
       </footer>
     </main>
@@ -266,14 +550,16 @@
     <script>
       function updateTime() {
         const options = {
-          timeZone: 'Europe/Paris',
-          hour: '2-digit',
-          minute: '2-digit',
-          second: '2-digit',
+          timeZone: "Europe/Paris",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
         };
-        const timeString = new Intl.DateTimeFormat('en-GB', options).format(new Date());
+        const timeString = new Intl.DateTimeFormat("en-GB", options).format(
+          new Date()
+        );
         const display = `TIMEZONE – CEST ${timeString}`;
-        document.getElementById('time-zone').textContent = display;
+        document.getElementById("time-zone").textContent = display;
       }
 
       updateTime();
